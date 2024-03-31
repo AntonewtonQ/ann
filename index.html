@@ -31,8 +31,6 @@
                 <ul class="dropdown-menu">
                   <li><a class="dropdown-item" href="#">Sobre mim</a></li>
                   <li><a class="dropdown-item" href="#">Textos</a></li>
-                  <li><hr class="dropdown-divider"></li>
-                  <li><a class="dropdown-item" href="#">Contacto</a></li>
                 </ul>
               </li>
             </ul>
@@ -63,7 +61,7 @@
             <h1 class="display-5 fw-bold text-body-emphasis lh-1 mb-3">Hey, I'm antonewton -- web Developer</h1>
             <p class="lead">Eu crio sites premium para criadores, empreendedores e startups que desejam converter clientes, gerar grandes receitas e se destacar em um mercado cada vez mais movimentado</p>
             <div class="d-grid gap-2 d-md-flex justify-content-md-start">
-              <button type="button" class="btn btn-warning  btn-lg px-4 me-md-2">Contactar</button>
+              <button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal" class="btn btn-warning  btn-lg px-4 me-md-2">Contactar</button>
             </div>
           </div>
         </div>
@@ -84,7 +82,7 @@
       <div class="container mb-5">
         <div class="card text-start ">
             <div class="card-body">
-              <h5 class="card-title">VAMOS CONTRUIR ALGO JUNTOS?</h5>
+              <h5 class="card-title">VAMOS CONSTRUIR ALGO JUNTOS?</h5>
               <p class="card-text">Se você tem algum projeto em mente, sinta-se à vontade para me enviar uma mensagem.</p>
               <!-- Button trigger modal -->
 <button type="button" class="btn btn-light " data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -96,51 +94,32 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="exampleModalLabel">Vamos contruir algo juntos?</h1>
+          <h1 class="modal-title fs-5" id="exampleModalLabel">Vamos construir algo juntos?</h1>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
         </div>
         <div class="modal-body">
             <form class="row g-3">
                 <div class="col-md-6">
-                  <label for="inputEmail4" class="form-label">Email</label>
+                  <label for="inputNome" required class="form-label">Nome</label>
+                  <input type="text" class="form-control" id="inputNome">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputNome" required class="form-label">Sobrenome</label>
+                  <input type="text" class="form-control" id="inputNome">
+                </div>
+                <div class="col-md-6">
+                  <label for="inputEmail4" required class="form-label">Email</label>
                   <input type="email" class="form-control" id="inputEmail4">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputPassword4" class="form-label">Password</label>
-                  <input type="password" class="form-control" id="inputPassword4">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress" class="form-label">Address</label>
-                  <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
-                </div>
-                <div class="col-12">
-                  <label for="inputAddress2" class="form-label">Address 2</label>
-                  <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
-                </div>
-                <div class="col-md-6">
-                  <label for="inputCity" class="form-label">City</label>
-                  <input type="text" class="form-control" id="inputCity">
-                </div>
+                </div>                
                 <div class="col-md-4">
-                  <label for="inputState" class="form-label">State</label>
+                  <label for="inputState" class="form-label">Qual é a sua ideia</label>
                   <select id="inputState" class="form-select">
-                    <option selected>Choose...</option>
-                    <option>...</option>
+                    <option selected></option>
+                    <option>WebSite</option>
+                    <option>App</option>
+                    <option>Outro</option>
                   </select>
-                </div>
-                <div class="col-md-2">
-                  <label for="inputZip" class="form-label">Zip</label>
-                  <input type="text" class="form-control" id="inputZip">
-                </div>
-                <div class="col-12">
-                  <div class="form-check">
-                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                    <label class="form-check-label" for="gridCheck">
-                      Check me out
-                    </label>
-                  </div>
-                </div>
-                
+                </div>                
               </form>
         </div>
         <div class="modal-footer">
@@ -152,8 +131,8 @@
             </div>
             <div class="card-footer text-body-secondary d-flex justify-content-center ">
                 <ul class="list-group list-group-horizontal">
-                    <li class="list-group-item"><a class="nav-link" href="#"><i class="bi bi-github"></i></a></li>
-                    <li class="list-group-item"><a class="nav-link " href="#"><i class="bi bi-instagram"></i></a></li>
+                    <li class="list-group-item"><a class="nav-link" href="github.com/AntonewtonQ"><i class="bi bi-github"></i></a></li>
+                    <li class="list-group-item"><a class="nav-link " href="intagram.com/antonewton_"><i class="bi bi-instagram"></i></a></li>
                     <li class="list-group-item"><a class="nav-link" href="#"><i class="bi bi-twitter-x"></i></a></li>
                   </ul>
             </div>
