@@ -8,3 +8,15 @@ document.getElementById('btnSwitch').addEventListener('click',()=>{
         document.getElementById('switch-mode').setAttribute('class','bi bi-moon-stars-fill');
     }
 })
+
+
+/*
+document.addEventListener("keydown", e=>{
+    e.preventDefault();
+    
+    if(e.key.toLowerCase()==="k" && e.ctrlKey){
+        document.
+    }
+});
+
+*/
